@@ -1,0 +1,165 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Precision Web Design - Home</title>
+    <link href="index_files/css.css" rel="stylesheet">
+    <style>
+      #nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #395036;
+        overflow: hidden;
+      }
+
+      .nav-item {
+        float: left;
+      }
+
+      .nav-item a {
+        display: inline-block;
+        text-align: center;
+        padding: 16px 20px;
+        background-color: transparent;
+        color: #ffe9c7;
+        text-decoration: none;
+      }
+
+      .nav-item a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active a{
+        color: #000001;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+      }
+
+      body {
+        overflow-x: hidden;
+        height: 175%;
+      }
+
+      h1 {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: #092a3a;
+        background-color: #ffe9c7;
+        mix-blend-mode: screen;
+        padding: 20px;
+        z-index: -1;
+      }
+
+      #footer-info {
+        background-color: #000001;
+        color: #ffe9c7;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
+      }
+
+      article {
+        position: absolute;
+        display: block;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 1000px;
+        top: 103vh;
+        left: 0;
+        right: 0;
+        
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        box-shadow: 5px 3px 2px grey;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul id="nav-bar">
+        <li class="nav-item active"><a class="nav-link" href="http://www.precisionweb.site/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/services.html">Web Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/contact.html">Contact</a></li>
+      </ul>
+
+      <img src="index_files/IMG_1742.JPG">
+
+    </header>
+    <h1>Precision Web Design</h1>
+    <article>
+      <h2>Why Does My Business Need a Website?</h2>
+      <ul>
+        <li>Customers expect it</li>
+        <li>Your competition has one</li>
+        <li>Increases visibility (Americans spend over 35 hours a month online)</li>
+        <li>Provides Opprotunities for lead generation</li>
+      </ul>
+      <h2>Why Should I Hire Someone?</h2>
+        <p>With so many free build your own website tools out there it 
+is tempting to go it on your own, however even with these 'easy to use' 
+tools user frequently spend hours first figuring out how to use the tool
+ and then trying to get the look they want. Frequently users are 
+required to host the website with that specific company. If you decide 
+to change hosting providers in the future, you may not be able to bring 
+your design or have to pay for it. Precision Web Design will provide you
+ with all the files for your website, you own them.</p>
+        
+        <p>When you hire someone to do this work for you, they can 
+customize how things look and work exactly the way you want them to, a 
+good web designer will help you through the do's &amp; don'ts of web 
+design, keeping you from making mistakes that will hurt your online 
+presence rather than help it. 'It takes about 50 milliseconds (that's 
+0.05 seconds) for users to form an opinion about your website...' that 
+opinon often determines if the customer will stay on your website.  </p>
+    </article>
+
+    <footer id="footer-info">
+      Precision Web Design<br>
+      Rexford, NY 12148<br>
+      Phone:<a href:="" tel:5182186076=""> (518) 218-6076</a><br>
+      Email: <a href="mailto:sean@precisionweb.site">sean@precisionweb.site</a>
+    </footer>
+  
+  <script>
+    var url = window.location.pathname;
+    var active = url.substring(url.lastIndexOf('/'));
+    var navItms = document.getElementsByClassName('nav-item');
+
+    for (var i = 0; i < navItms.length; i++) {
+      var navLink = navItms[i].childNodes[0].href;
+      navLink = navLink.substring(navLink.lastIndexOf('/'));
+      if (navLink == active) {
+        navItms[i].classList.add("active");
+      } else {
+        navItms[i].classList.remove("active");
+      }
+    }
+
+  </script>
+
+</body></html>

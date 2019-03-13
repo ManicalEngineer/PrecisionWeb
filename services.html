@@ -1,0 +1,232 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Precision Web Design - Web Design</title>
+    <link href="services_files/css.css" rel="stylesheet">
+    <style>
+      #nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #395036;
+        overflow: hidden;
+      }
+
+      .nav-item {
+        float: left;
+      }
+
+      .nav-item a {
+        display: inline-block;
+        text-align: center;
+        padding: 16px 20px;
+        background-color: transparent;
+        color: #ffe9c7;
+        text-decoration: none;
+      }
+
+      .nav-item a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active a{
+        color: #000001;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      h1 {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: #092a3a;
+        background-color: #ffe9c7;
+        mix-blend-mode: screen;
+        padding: 20px;
+        z-index: -1;
+      }
+
+      #footer-info {
+        background-color: #000001;
+        color: #ffe9c7;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100vw;
+      }
+
+      article {
+        position: absolute;
+        top: 105vh;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 100px;
+        z-index: -1;
+        display: flex;
+        flex-direction: coluumn;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .service {
+        width: 80vw;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 3px 2px grey;
+        color: #000001;
+      }
+
+      .service-content {
+        display: none;
+      }
+
+      #service-container h2 {
+        width: 80vw;
+      }
+
+      .expanded {
+        display: block;
+      }
+
+    </style>
+    <link rel="stylesheet" href="services_files/font-awesome.css">
+  </head>
+  <body>
+    <header>
+      <ul id="nav-bar">
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/about.html">About</a></li>
+        <li class="nav-item active"><a class="nav-link" href="http://www.precisionweb.site/services.html">Web Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/contact.html">Contact</a></li>
+      </ul>
+
+      <img src="services_files/IMG_1742.JPG">
+
+    </header>
+    <h1>Precision Web Design</h1>
+    <article id="service-container">
+      <h2>Services Offered</h2>
+      <div class="service">
+        <h3 class="service-title"><i class="fa fa-angle-right" onclick="void(0)"></i> Static Web Design</h3>
+        <div class="service-content">
+        <p>This service includes layout services,
+          approriate site navigation, and cacading style sheets features</p>
+          <span class="service-cost">Price: $750/page</span>
+        <h4>Included Features</h4>
+        <ul>
+          <li>HTML Layout</li>
+          <li>Basic Cascading Style Sheets</li>
+          <li>Basic Javascript</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3 class="service-title"><i class="fa fa-angle-right" onclick="void(0)"></i> Responsive Web Design</h3>
+        <div class="service-content">
+        <p>Add-on to static web design, makes your site
+          look good on all devices</p>
+          <span class="service-cost">$200-$300/page</span>
+        <h4>Included Features</h4>
+        <ul>
+          <li>Reponsive Cascading Style Sheets</li>
+          <li>Basic CSS</li>
+          <li>Basic Javascript</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3 class="service-title"><i class="fa fa-angle-right" onclick="void(0)"></i> Advanced Features</h3>
+        <div class="service-content">
+        <p>This includes development of interactive client side features that
+          utilize javascript and cascading style sheets</p>
+          <span class="service-cost">Inquire for Quote</span>
+        <h4>Examples of Advanced Features</h4>
+        <ul>
+          <li>Drop Down Menus</li>
+          <li>Sliding Content Gallerys</li>
+          <li>Collapasable Content</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3 class="service-title"><i class="fa fa-angle-right" onclick="void(0)"></i> Web Site Maintaince</h3>
+        <div class="service-content">
+        <p>This includes updating of conent, removing or
+          fixing of broken links, changing media for similar sized/type media.
+          Excludes changes to layout</p>
+          <span class="service-cost">$20/month or Item based</span>
+        <h4>Monthly Subscription Includes</h4>
+        <ul>
+          <li>Content Update</li>
+          <li>Media Updates</li>
+          <li>Unlimited Link Fixes</li>
+        </ul>
+        </div>
+      </div>
+    </article>
+
+    <footer id="footer-info">
+      Precision Web Design<br>
+      Rexford, NY 12148<br>
+      Phone: <a href:="" tel:5182186076="">(518) 218-6076</a><br>
+      Email: <a href="mailto:sean@precisionweb.site">sean@precisionweb.site</a>
+    </footer>
+  
+  <script>
+    var url = window.location.pathname;
+    var active = url.substring(url.lastIndexOf('/'));
+    var navItms = document.getElementsByClassName('nav-item');
+    var services = document.getElementById('service-container');
+
+    for (var i = 0; i < navItms.length; i++) {
+      var navLink = navItms[i].childNodes[0].href;
+      navLink = navLink.substring(navLink.lastIndexOf('/'));
+      if (navLink == active) {
+        navItms[i].classList.add("active");
+      } else {
+        navItms[i].classList.remove("active");
+      }
+    }
+
+    services.addEventListener("click", function(e) {
+      if (e.target.classList[1] == "fa-angle-right"){
+        e.target.parentElement.nextElementSibling.classList.add("expanded");
+        e.target.classList.add("fa-angle-down");
+        e.target.classList.remove("fa-angle-right");
+      } else if (e.target.classList[1] == "fa-angle-down") {
+        e.target.parentElement.nextElementSibling.classList.remove("expanded");
+        e.target.classList.remove("fa-angle-down");
+        e.target.classList.add("fa-angle-right");
+      }
+    });
+
+  </script>
+
+</body></html>

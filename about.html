@@ -1,0 +1,148 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Precision Web Design - About</title>
+    <link href="about_files/css.css" rel="stylesheet">
+    <style>
+      #nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #395036;
+        overflow: hidden;
+      }
+
+      .nav-item {
+        float: left;
+      }
+
+      .nav-item a {
+        display: inline-block;
+        text-align: center;
+        padding: 16px 20px;
+        background-color: transparent;
+        color: #ffe9c7;
+        text-decoration: none;
+      }
+
+      .nav-item a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active a{
+        color: #000001;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+      }
+
+      body {
+        overflow-x: hidden;
+        height: 150%;
+      }
+
+      h1 {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: #092a3a;
+        background-color: #ffe9c7;
+        mix-blend-mode: screen;
+        padding: 20px;
+        z-index: -1;
+      }
+
+      #footer-info {
+        background-color: #000001;
+        color: #ffe9c7;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
+      }
+
+      article {
+        position: absolute;
+        display: block;
+        margin: auto;
+        width: 60%;
+        top: 103vh;
+        left: 0;
+        right: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        box-shadow: 5px 3px 2px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul id="nav-bar">
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="http://www.precisionweb.site/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/services.html">Web Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://www.precisionweb.site/contact.html">Contact</a></li>
+      </ul>
+
+      <img src="about_files/IMG_1742.JPG">
+
+    </header>
+    <h1>Precision Web Design</h1>
+    <article>
+      <h2>About</h2>
+      <span>Sean Bicknell - Owner/Designer
+      <p>Sean has two bachelor of science degrees one from
+        <a href="https://www.newhaven.edu/">University of New Haven</a> in Fire Science
+        and a second from <a href="http://www.buffalo.edu/">University At Buffalo</a>
+        in Mechanical Engineering. Sean created his first website in 1998. After being
+        away from web development Sean took on responsiblities doing user interface
+        design at his full time job using HTML, CSS &amp; Javascript. He soon realized
+        that he could use these skills to help small businesses grow and looks forward
+        to helping you meet your goals.
+      </p>
+    </span></article>
+
+    <footer id="footer-info">
+      Precision Web Design<br>
+      Rexford, NY 12148<br>
+      Phone: <a href:="" tel:5182186076="">(518) 218-6076</a><br>
+      Email: <a href="mailto:sean@precisionweb.site">sean@precisionweb.site</a>
+    </footer>
+  
+  <script>
+    var url = window.location.pathname;
+    var active = url.substring(url.lastIndexOf('/'));
+    var navItms = document.getElementsByClassName('nav-item');
+
+    for (var i = 0; i < navItms.length; i++) {
+      var navLink = navItms[i].childNodes[0].href;
+      navLink = navLink.substring(navLink.lastIndexOf('/'));
+      if (navLink == active) {
+        navItms[i].classList.add("active");
+      } else {
+        navItms[i].classList.remove("active");
+      }
+    }
+
+  </script>
+
+</body></html>
